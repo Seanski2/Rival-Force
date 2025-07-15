@@ -1,0 +1,1 @@
+tellraw @a {"bold":true,"color":"#FF0000","italic":true,"text":"Rival Force datapack loaded successfully!"}
