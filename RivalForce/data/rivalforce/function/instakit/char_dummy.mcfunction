@@ -4,14 +4,22 @@ scoreboard players set @p charID 1
 
 # Helmet/Stats
 
-item replace entity @p armor.head with leather_helmet[dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:10,operation:"add_value",slot:"head"},{id:"max_health",type:"max_health",amount:20,operation:"add_value",slot:"head"},{id:"gravity",type:"gravity",amount:-0.15,operation:"add_multiplied_base",slot:"head"},{id:"jump_strength",type:"jump_strength",amount:0.2,operation:"add_value",slot:"head"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value",slot:"head"},{id:"scale",type:"scale",amount:0,operation:"add_value",slot:"head"},{id:"movement_speed",type:"movement_speed",amount:0.2,operation:"add_multiplied_base",slot:"head"},{id:"safe_fall_distance",type:"safe_fall_distance",amount:1000,operation:"add_value",slot:"head"},{id:"step_height",type:"step_height",amount:0.5,operation:"add_value",slot:"head"}]] 1
+item replace entity @p armor.head with leather_helmet[dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:10,operation:"add_value",slot:"head"},{id:"max_health",type:"max_health",amount:20,operation:"add_value",slot:"head"},{id:"gravity",type:"gravity",amount:-0.15,operation:"add_multiplied_base",slot:"head"},{id:"jump_strength",type:"jump_strength",amount:0.2,operation:"add_value",slot:"head"},{id:"knockback_resistance",type:"knockback_resistance",amount:0,operation:"add_value",slot:"head"},{id:"scale",type:"scale",amount:0,operation:"add_value",slot:"head"},{id:"movement_speed",type:"movement_speed",amount:0.2,operation:"add_multiplied_base",slot:"head"},{id:"safe_fall_distance",type:"safe_fall_distance",amount:1000,operation:"add_value",slot:"head"},{id:"step_height",type:"step_height",amount:0.5,operation:"add_value",slot:"head"}],unbreakable={}] 1
 
 # Other Armor
 
-item replace entity @p armor.chest with leather_chestplate[dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"chest"}]] 1
-item replace entity @p armor.legs with leather_leggings[dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"legs"}]] 1
-item replace entity @p armor.feet with leather_boots[dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"feet"}]] 1
+item replace entity @p armor.chest with leather_chestplate[dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"chest"}],unbreakable={}] 1
+item replace entity @p armor.legs with leather_leggings[dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"legs"}],unbreakable={}] 1
+item replace entity @p armor.feet with leather_boots[dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"feet"}],unbreakable={}] 1
 
 # Standard Fire
 
 item replace entity @p hotbar.0 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Standard Fire"},lore=[{"color":"#A1A1A1","italic":true,"text":"Fires a standard bullet."}],custom_data={moveSlot:0}] 1
+
+# Team Buff
+
+item replace entity @p hotbar.1 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Team Buff"},lore=[{"color":"#A1A1A1","italic":true,"text":"Applies effects to the user's team."}],custom_data={moveSlot:1}] 1
+
+# Ultimate
+
+item replace entity @p hotbar.5 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Ultimate"},lore=[{"color":"#A1A1A1","italic":true,"text":"Activates the ultimate."}],custom_data={moveSlot:Ult}] 1

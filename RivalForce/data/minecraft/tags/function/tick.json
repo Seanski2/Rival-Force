@@ -1,6 +1,5 @@
  {
     "values": [
-        "rivalforce:characters/dummy/standard_fire_travel",
         "rivalforce:cooldowntick/move_slot_cooldown"
     ]
   }
