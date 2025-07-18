@@ -1,0 +1,1 @@
+effect give @e[scores={flagged=1..}] glowing 10 0 true

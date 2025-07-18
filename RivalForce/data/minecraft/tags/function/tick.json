@@ -1,5 +1,6 @@
  {
     "values": [
-        "rivalforce:cooldowntick/move_slot_cooldown"
+        "rivalforce:cooldowntick/move_slot_cooldown",
+         "rivalforce:ctf/flag_tick"
     ]
   }

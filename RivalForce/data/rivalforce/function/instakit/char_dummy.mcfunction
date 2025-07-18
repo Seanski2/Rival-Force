@@ -1,6 +1,8 @@
 # Initial Setup
 clear @p
 scoreboard players set @p charID 1
+scoreboard players reset @p flagged
+scoreboard players reset @p itemActivation
 
 # Helmet/Stats
 

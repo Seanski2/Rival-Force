@@ -1,3 +1,5 @@
 { 
-  "values": [ "rivalforce:reload" ] 
+  "values": [ 
+    "rivalforce:reload"
+   ]
 }
