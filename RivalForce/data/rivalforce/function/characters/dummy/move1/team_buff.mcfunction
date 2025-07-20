@@ -6,7 +6,7 @@ execute at @p[scores={charID=1, itemActivation=1..}] run effect give @s speed 5 
 execute at @p[scores={charID=1, itemActivation=1..}] run playsound minecraft:item.totem.use master @a[distance=..18] ~ ~ ~ 100 1.0 0
 
 # Particle
-execute at @p[scores={charID=1, itemActivation=1..}] as @e[distance=..7] at @e[distance=..7] run execute if score @s Affiliation = @p[scores={charID=1,itemActivation=1..}] Affiliation run particle dust_pillar{block_state:"minecraft:blue_ice"} ^ ^1 ^ 0.2 0.2 0.2 0.01 100 normal
+execute at @p[scores={charID=1, itemActivation=1..}] as @e[distance=..7,type=!armor_stand] if score @s Affiliation = @p[scores={charID=1,itemActivation=1..}] Affiliation at @s[distance=..7] run particle dust_pillar{block_state:"minecraft:blue_ice"} ^ ^1 ^ 0.2 0.2 0.2 0.01 100 normal
 execute at @p[scores={charID=1, itemActivation=1..}] run particle dust_pillar{block_state:"minecraft:blue_ice"} ^ ^1 ^ 0.2 0.2 0.2 0.01 100 normal
 
 # Cooldown

@@ -10,7 +10,7 @@ execute at @p[scores={charID=1, itemActivation=1..}] run playsound minecraft:ent
 
 # Cooldown
 item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.0 with warped_fungus[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Standard Fire"},lore=[{"color":"#A1A1A1","italic":true,"text":"Fires a standard bullet."}]] 1
-scoreboard players set @p[scores={charID=1, itemActivation=1..}] moveSlotCooldown0 10
+scoreboard players set @p[scores={charID=1, itemActivation=1..}] moveSlotCooldown0 8
 
 # ItemActivation Reset
 scoreboard players set @p[scores={charID=1, itemActivation=1..}] itemActivation 0
