@@ -1,1 +1,1 @@
-execute as @a[scores={deathCount=1..}] run function rivalforce:instakit/instakit_lookup
+execute at @a[scores={deathCount=1..}] run function rivalforce:instakit/instakit_lookup
