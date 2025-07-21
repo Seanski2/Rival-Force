@@ -5,6 +5,10 @@ execute if entity @e[tag=char_dummy_standard] run function rivalforce:characters
 # Slot 1
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:1}}}}] run function rivalforce:characters/dummy/move1/team_buff
 
+# Slot 2
+execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:2}}}}] run function rivalforce:characters/dummy/move2/detonation_trap
+execute if entity @e[tag=char_dummy_trap] run function rivalforce:characters/dummy/move2/detonation_trap_tick
+
 # Ult
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:Ult}}}}] run function rivalforce:characters/dummy/moveult/ult
 execute if entity @e[tag=char_dummy_ult] run function rivalforce:characters/dummy/moveult/ult_tick

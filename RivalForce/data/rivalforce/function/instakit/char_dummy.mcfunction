@@ -20,7 +20,11 @@ item replace entity @p hotbar.0 with warped_fungus_on_a_stick[custom_name={"bold
 
 item replace entity @p hotbar.1 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Team Buff"},lore=[{"color":"#A1A1A1","italic":true,"text":"Applies effects to the user's team."}],custom_data={moveSlot:1}] 1
 
+# Detonation Trap
+
+item replace entity @p hotbar.2 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Detonation Trap"},lore=[{"color":"#A1A1A1","italic":true,"text":"Sets up a trap that explodes when approached by an enemy."}],custom_data={moveSlot:2}] 1
+
 # Ultimate
 
-item replace entity @p hotbar.5 with warped_fungus[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Ultimate"},lore=[{"color":"#A1A1A1","italic":true,"text":"Activates the ultimate."}],custom_data={moveSlot:Ult}] 1
+item replace entity @p hotbar.5 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Ultimate"},lore=[{"color":"#A1A1A1","italic":true,"text":"Activates the ultimate."}],custom_data={moveSlot:Ult}] 1
 scoreboard players set @p moveSlotCooldownUlt 1000
