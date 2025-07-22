@@ -1,0 +1,6 @@
+{
+	"parent": "item/generic",
+	"textures": {
+		"layer0": "rival_force_resources:item/dummy_skills/dummy_standard_fire"
+	}
+}
