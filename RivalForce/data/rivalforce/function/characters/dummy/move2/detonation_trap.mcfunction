@@ -9,7 +9,7 @@ execute at @a[scores={charID=1, itemActivation=1..}] run scoreboard players oper
 execute at @p[scores={charID=1, itemActivation=1..}] run playsound minecraft:entity.breeze.shoot master @a[distance=..18] ~ ~ ~ 100 1.0 0
 
 # Cooldown
-item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.2 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Detonation Trap"},lore=[{"color":"#A1A1A1","italic":true,"text":"Sets up a trap that explodes when approached by an enemy."}]] 1
+item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.2 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Detonation Trap"},lore=[{"color":"#A1A1A1","italic":true,"text":"Sets up a trap that explodes when approached by an enemy."}],item_model="rival_force_resources:dummy_skills/dummy_detonation_trap_cooldown"] 1
 scoreboard players set @p[scores={charID=1, itemActivation=1..}] moveSlotCooldown2 90
 
 # ItemActivation Reset

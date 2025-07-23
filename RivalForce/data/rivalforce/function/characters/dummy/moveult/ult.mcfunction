@@ -9,7 +9,7 @@ execute at @a[scores={charID=1, itemActivation=1..}] run scoreboard players oper
 execute at @p[scores={charID=1, itemActivation=1..}] run playsound minecraft:entity.wither.death master @a[distance=..18] ~ ~ ~ 100 1.0 0
 
 # Cooldown
-item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.5 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Ultimate"},lore=[{"color":"#A1A1A1","italic":true,"text":"Activates the ultimate."}]] 1
+item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.5 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Ultimate"},lore=[{"color":"#A1A1A1","italic":true,"text":"Activates the ultimate."}],item_model="rival_force_resources:dummy_skills/dummy_ultimate_cooldown"] 1
 scoreboard players set @p[scores={charID=1, itemActivation=1..}] moveSlotCooldownUlt 1000
 
 # ItemActivation Reset

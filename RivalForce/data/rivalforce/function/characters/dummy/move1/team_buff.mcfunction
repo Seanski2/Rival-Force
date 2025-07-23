@@ -10,7 +10,7 @@ execute at @p[scores={charID=1, itemActivation=1..}] as @e[distance=..7,type=!ar
 execute at @p[scores={charID=1, itemActivation=1..}] run particle dust_pillar{block_state:"minecraft:blue_ice"} ^ ^1 ^ 0.2 0.2 0.2 0.01 100 normal
 
 # Cooldown
-item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.1 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Team Buff"},lore=[{"color":"#A1A1A1","italic":true,"text":"Applies effects to the user's team."}]] 1
+item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.1 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Team Buff"},lore=[{"color":"#A1A1A1","italic":true,"text":"Applies effects to the user's team."}],item_model="rival_force_resources:dummy_skills/dummy_team_buff_cooldown"] 1
 scoreboard players set @p[scores={charID=1, itemActivation=1..}] moveSlotCooldown1 300
 
 # ItemActivation Reset
