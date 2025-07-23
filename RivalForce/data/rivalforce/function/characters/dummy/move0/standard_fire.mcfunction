@@ -9,7 +9,7 @@ execute at @a[scores={charID=1, itemActivation=1..}] run scoreboard players oper
 execute at @p[scores={charID=1, itemActivation=1..}] run playsound minecraft:entity.blaze.shoot master @a[distance=..18] ~ ~ ~ 100 1.0 0
 
 # Cooldown
-item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.0 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Standard Fire"},lore=[{"color":"#A1A1A1","italic":true,"text":"Fires a standard bullet."}]] 1
+item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.0 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Standard Fire"},lore=[{"color":"#A1A1A1","italic":true,"text":"Fires a standard bullet."}],item_model="rival_force_resources:dummy_skills/dummy_standard_fire_cooldown"] 1
 scoreboard players set @p[scores={charID=1, itemActivation=1..}] moveSlotCooldown0 8
 
 # ItemActivation Reset
