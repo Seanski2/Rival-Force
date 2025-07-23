@@ -7,5 +7,8 @@ execute at @p[scores={moveSlotCooldown1=..0}] run function rivalforce:characters
 # Slot 2
 execute at @p[scores={moveSlotCooldown2=..0}] run function rivalforce:characters/dummy/cooldown/move2_cooldown
 
+# Slot 3
+execute at @p[scores={moveSlotCooldown3=..0}] run function rivalforce:characters/dummy/cooldown/move3_cooldown
+
 # Ult
 execute at @p[scores={moveSlotCooldownUlt=..0}] run function rivalforce:characters/dummy/cooldown/moveult_cooldown

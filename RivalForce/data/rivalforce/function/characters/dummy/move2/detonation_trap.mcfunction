@@ -1,6 +1,6 @@
 # Spawn & Reposition
 execute at @a[scores={charID=1, itemActivation=1..}] run summon armor_stand ^ ^ ^ {Invisible:1b,Health:8f,Tags:["char_dummy_trap"]}
-execute at @a[scores={charID=1, itemActivation=1..}] anchored feet rotated as @p run tp @e[type=minecraft:armor_stand,tag=char_dummy_trap, limit=1, sort=nearest] ^ ^-.5 ^ ~ ~
+execute at @a[scores={charID=1, itemActivation=1..}] anchored feet rotated as @p run tp @e[type=minecraft:armor_stand,tag=char_dummy_trap, limit=1, sort=nearest] ^ ^ ^ ~ ~
 
 # Set Which Team to Damage
 execute at @a[scores={charID=1, itemActivation=1..}] run scoreboard players operation @e[type=minecraft:armor_stand,tag=char_dummy_trap, limit=1, sort=nearest] Affiliation = @p Affiliation
