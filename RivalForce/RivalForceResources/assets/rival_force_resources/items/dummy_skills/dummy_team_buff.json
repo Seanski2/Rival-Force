@@ -1,0 +1,6 @@
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "rival_force_resources:item/dummy_skills/dummy_team_buff"
+	}
+}

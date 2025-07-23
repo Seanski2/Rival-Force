@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "rival_force_resources:item/dummy_skills/dummy_ultimate"
+	}
+}
