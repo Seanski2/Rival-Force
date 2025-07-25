@@ -1,2 +1,2 @@
-# 1 - Dummy
-execute at @p[scores={charID=1}] run function rivalforce:instakit/char_dummy
+# 0 - Dummy
+execute at @p[scores={charID=0}] run function rivalforce:instakit/char_dummy

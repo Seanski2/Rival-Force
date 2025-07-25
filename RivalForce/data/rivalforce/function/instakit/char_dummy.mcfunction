@@ -1,5 +1,5 @@
 # Initial Setup
-scoreboard players set @p charID 1
+scoreboard players set @p charID 0
 function rivalforce:instakit/instakit_setup
 
 # Helmet/Stats

@@ -1,5 +1,3 @@
-# ULT
-
 # Travel
 execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_ult] run tp @n[type=minecraft:area_effect_cloud,tag=char_dummy_ult] ^ ^ ^0.1
 
