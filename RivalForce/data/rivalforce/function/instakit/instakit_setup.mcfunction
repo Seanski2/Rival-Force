@@ -8,3 +8,4 @@ scoreboard players reset @p moveSlotCooldown1
 scoreboard players reset @p moveSlotCooldown2
 scoreboard players reset @p moveSlotCooldown3
 scoreboard players reset @p moveSlotCooldown4
+effect give @p minecraft:instant_health 1 100 true
