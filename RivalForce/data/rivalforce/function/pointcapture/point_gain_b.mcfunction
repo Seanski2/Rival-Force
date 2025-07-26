@@ -1,0 +1,2 @@
+execute at @e[tag=capture_point] run particle dust{color:[0.000,0.000,1.000],scale:1} ^ ^ ^ 2.5 0.3 2.5 1 200 normal
+execute at @e[tag=capture_point] unless entity @a[distance=..7,scores={Affiliation=1}] run function rivalforce:pointcapture/point_gain_b_unless

@@ -5,6 +5,6 @@
         "rivalforce:cooldowntick/move_slot_cooldown",
          "rivalforce:deathtracker/death_tick",
 
-         "rivalforce:ctf/flag_master"
+         "rivalforce:general/gamemode_manager_base"
     ]
   }

@@ -1,0 +1,1 @@
+execute if score $matchStarted matchStarted matches 1.. run function rivalforce:general/gamemode_manager

@@ -1,1 +1,0 @@
-execute if score $gamemode gamemode matches 1 if score $matchStarted matchStarted matches 1.. run function rivalforce:ctf/flag_tick
