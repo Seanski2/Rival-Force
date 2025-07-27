@@ -1,0 +1,2 @@
+execute if entity @p[scores={Affiliation=2,flagged=1..},distance=..3] run function rivalforce:ctf/a_flag_captured
+execute if entity @p[distance=..3,scores={Affiliation=1}] unless entity @a[scores={Affiliation=1,flagged=1..}] run function rivalforce:ctf/b_flag_get

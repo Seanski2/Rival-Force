@@ -1,0 +1,1 @@
+execute if score $gamemode gamemode matches 1 run function rivalforce:ctf/a_flag_zone
