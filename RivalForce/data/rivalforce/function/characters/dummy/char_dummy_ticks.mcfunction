@@ -12,7 +12,7 @@ execute if entity @e[tag=char_dummy_trap] run function rivalforce:characters/dum
 # Slot 3
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:3}}}}] run function rivalforce:characters/dummy/move3/construct_barrier
 
-# Slot 4
+# Slot 4 (edit soon)
 
 # Ult
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:Ult}}}}] run function rivalforce:characters/dummy/moveult/ult
