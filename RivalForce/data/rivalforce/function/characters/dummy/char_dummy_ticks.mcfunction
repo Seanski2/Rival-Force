@@ -12,7 +12,11 @@ execute if entity @e[tag=char_dummy_trap] run function rivalforce:characters/dum
 # Slot 3
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:3}}}}] run function rivalforce:characters/dummy/move3/construct_barrier
 
-# Slot 4 (edit soon)
+# Slot 4
+execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:4}}}}] run function rivalforce:characters/dummy/move4/combo_handler
+scoreboard players remove @a[scores={charID=0,moveSlotExtra4=1..}] moveSlotExtra4 1
+execute if entity @e[tag=char_dummy_combo_1] run function rivalforce:characters/dummy/move4/combo_move_1_tick
+execute if entity @e[tag=char_dummy_combo_2] run function rivalforce:characters/dummy/move4/combo_move_2_tick
 
 # Ult
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:Ult}}}}] run function rivalforce:characters/dummy/moveult/ult
