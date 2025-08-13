@@ -15,8 +15,9 @@ execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{
 # Slot 4
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:4}}}}] run function rivalforce:characters/dummy/move4/combo_handler
 scoreboard players remove @a[scores={charID=0,moveSlotExtra4=1..}] moveSlotExtra4 1
-execute if entity @e[tag=char_dummy_combo_1,scores={attack_anim_frame=1..}] run function rivalforce:characters/dummy/move4/combo_move_1_tick
-execute if entity @e[tag=char_dummy_combo_2,scores={attack_anim_frame=1..}] run function rivalforce:characters/dummy/move4/combo_move_2_tick
+execute if entity @e[tag=char_dummy_combo_1,scores={attack_anim_frame=0..}] run function rivalforce:characters/dummy/move4/combo_move_1_tick
+execute if entity @e[tag=char_dummy_combo_2,scores={attack_anim_frame=0..}] run function rivalforce:characters/dummy/move4/combo_move_2_tick
+execute if entity @e[tag=char_dummy_combo_3,scores={attack_anim_frame=0..}] run function rivalforce:characters/dummy/move4/combo_move_3_tick
 
 # Ult
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:Ult}}}}] run function rivalforce:characters/dummy/moveult/ult

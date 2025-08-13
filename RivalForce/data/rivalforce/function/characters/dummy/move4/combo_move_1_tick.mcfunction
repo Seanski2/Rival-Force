@@ -1,5 +1,8 @@
 # COMBO_MOVE_1
 
+# Initialization Frame
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=0}] positioned ^ ^ ^1.165 as @n[distance=..2,scores={charID=0}] at @s run execute if score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=0}] Affiliation = @s Affiliation run teleport @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=0}] ^1.15 ^0.1875 ^0 facing entity @s feet
+
 # Frames
 execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=1}] positioned ^ ^ ^1.165 as @n[distance=..2,scores={charID=0}] at @s run execute if score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=1}] Affiliation = @s Affiliation run teleport @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=1}] ^1.15 ^0.1875 ^0 facing entity @s feet
 execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=2}] positioned ^ ^ ^1.015 as @n[distance=..2,scores={charID=0}] at @s run execute if score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=2}] Affiliation = @s Affiliation run teleport @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=2}] ^0.8625 ^0.375 ^0.383 facing entity @s feet
@@ -11,22 +14,22 @@ execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={at
 execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=8..}] positioned ^ ^ ^1.890 as @n[distance=..2,scores={charID=0}] at @s run execute if score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=8..}] Affiliation = @s Affiliation run teleport @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=8..}] ^-1.15 ^1.5 ^0 facing entity @s feet
 
 # Particles
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^1 ^0 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^1 ^-0.5 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^1 ^-1 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^1 ^-1.5 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^1 ^-2 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.75 ^0 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.75 ^-0.5 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.75 ^-1 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.75 ^-1.5 0.1 0.1 0.1 0 100 force
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.75 ^-2 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^0.5 ^0 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^0.5 ^-0.5 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^0.5 ^-1 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^0.5 ^-1.5 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^ ^0.5 ^-2 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.25 ^0 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.25 ^-0.5 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.25 ^-1 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.25 ^-1.5 0.1 0.1 0.1 0 100 force
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] run particle minecraft:crit ^0.5 ^0.25 ^-2 0.1 0.1 0.1 0 100 force
 
 # Frame Kill
 execute as @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=8..}] run kill @s
 
 # Frame Step
-execute as @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=1..}] run scoreboard players add @s attack_anim_frame 1
+execute as @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=0..}] run scoreboard players add @s attack_anim_frame 1
 
 # Damage
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] as @n[distance=..2.5,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] Affiliation = @s Affiliation run damage @s[tag=!invincible] 5 minecraft:player_attack
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] positioned ^ ^ ^-1 as @n[distance=..2.5,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] Affiliation = @s Affiliation run damage @s[tag=!invincible] 5 minecraft:player_attack
