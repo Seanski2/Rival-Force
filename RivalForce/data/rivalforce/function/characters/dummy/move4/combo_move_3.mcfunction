@@ -1,5 +1,5 @@
 # Spawn 
-execute at @a[scores={charID=0, itemActivation=1..}] run summon area_effect_cloud ^ ^1.3 ^ {custom_particle:{type:"crit"},Radius:0f,Duration:12,Tags:["char_dummy_combo_3"]}
+execute at @a[scores={charID=0, itemActivation=1..}] run summon area_effect_cloud ^ ^ ^ {custom_particle:{type:"crit"},Radius:0f,Duration:12,Tags:["char_dummy_combo_3"]}
 
 # Set Which Team to Damage
 execute at @a[scores={charID=0, itemActivation=1..}] run scoreboard players operation @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3, limit=1, sort=nearest] Affiliation = @p Affiliation
