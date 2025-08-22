@@ -1,6 +1,7 @@
  {
     "values": [
         "rivalforce:characters/dummy/char_dummy_parent",
+        "rivalforce:characters/vlad/char_vlad_parent",
 
         "rivalforce:cooldowntick/move_slot_cooldown",
          "rivalforce:deathtracker/death_tick",

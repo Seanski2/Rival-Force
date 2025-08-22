@@ -1,0 +1,3 @@
+item replace entity @p hotbar.4 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Melee Combo"},lore=[{"color":"#A1A1A1","italic":true,"text":"Can be activated multiple times to do a series of attacks."}],custom_data={moveSlot:4},item_model="rival_force_resources:dummy_skills/dummy_melee_combo"] 1
+scoreboard players set @p moveSlotComboCounter4 1
+scoreboard players reset @p moveSlotCooldown4
