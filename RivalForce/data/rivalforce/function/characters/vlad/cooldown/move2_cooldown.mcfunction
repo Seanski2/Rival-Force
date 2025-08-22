@@ -1,0 +1,3 @@
+# Slot 2
+item replace entity @p hotbar.2 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Detonation Trap"},lore=[{"color":"#A1A1A1","italic":true,"text":"Sets up a trap that explodes when approached by an enemy."}],custom_data={moveSlot:2},item_model="rival_force_resources:dummy_skills/dummy_detonation_trap"] 1
+scoreboard players reset @p moveSlotCooldown2
