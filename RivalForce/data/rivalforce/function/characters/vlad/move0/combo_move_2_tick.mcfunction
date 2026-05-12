@@ -32,4 +32,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=char_vlad_combo_2,scores={att
 execute as @e[type=minecraft:area_effect_cloud,tag=char_vlad_combo_2,scores={attack_anim_frame=0..}] run scoreboard players add @s attack_anim_frame 1
 
 # Damage
-execute at @e[type=minecraft:area_effect_cloud,tag=char_vlad_combo_2] positioned ^ ^ ^-1 as @n[distance=..2.5,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_vlad_combo_2] Affiliation = @s Affiliation run damage @s[tag=!invincible] 4 minecraft:player_attack
+execute at @e[type=minecraft:area_effect_cloud,tag=char_vlad_combo_2] positioned ^ ^ ^-1 as @n[distance=..2.5,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_vlad_combo_2] Affiliation = @s Affiliation run damage @s[tag=!invincible] 5 minecraft:player_attack

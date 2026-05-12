@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "rival_force_resources:item/vlad_skills/vlad_scarlet_carve"
+	}
+}

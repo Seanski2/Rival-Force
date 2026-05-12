@@ -1,0 +1,20 @@
+# Spawn Pillager 1
+execute at @p[scores={charID=1, itemActivation=1..}] anchored eyes if entity @p[distance=..1,sort=nearest,limit=1,team=teamA] run summon pillager ^2 ^1 ^2 {Team:"teamA",CanPickUpLoot:0b,Health:22f,Tags:["vlad_ranged_summon"],CustomName:{"bold":true,"color":"#330710","text":"Undead"},equipment:{mainhand:{id:"minecraft:crossbow",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{"punch":1,"quick_charge":3,"piercing":4}}}},drop_chances:{mainhand:0.000},attributes:[{id:"minecraft:explosion_knockback_resistance",base:0.8},{id:"minecraft:follow_range",base:100},{id:"minecraft:knockback_resistance",base:0.8},{id:"minecraft:max_health",base:22},{id:"minecraft:movement_speed",base:0},{id:"minecraft:scale",base:1.2}]}
+execute at @p[scores={charID=1, itemActivation=1..}] anchored eyes if entity @p[distance=..1,sort=nearest,limit=1,team=teamB] run summon pillager ^2 ^1 ^2 {Team:"teamB",CanPickUpLoot:0b,Health:22f,Tags:["vlad_ranged_summon"],CustomName:{"bold":true,"color":"#330710","text":"Undead"},equipment:{mainhand:{id:"minecraft:crossbow",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{"punch":1,"quick_charge":3,"piercing":4}}}},drop_chances:{mainhand:0.000},attributes:[{id:"minecraft:explosion_knockback_resistance",base:0.8},{id:"minecraft:follow_range",base:100},{id:"minecraft:knockback_resistance",base:0.8},{id:"minecraft:max_health",base:22},{id:"minecraft:movement_speed",base:0},{id:"minecraft:scale",base:1.2}]}
+
+# Spawn Pillager 2
+execute at @p[scores={charID=1, itemActivation=1..}] anchored eyes if entity @p[distance=..1,sort=nearest,limit=1,team=teamA] run summon pillager ^-2 ^1 ^2 {Team:"teamA",CanPickUpLoot:0b,Health:22f,Tags:["vlad_ranged_summon"],CustomName:{"bold":true,"color":"#330710","text":"Undead"},equipment:{mainhand:{id:"minecraft:crossbow",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{"punch":1,"quick_charge":3,"piercing":4}}}},drop_chances:{mainhand:0.000},attributes:[{id:"minecraft:explosion_knockback_resistance",base:0.8},{id:"minecraft:follow_range",base:100},{id:"minecraft:knockback_resistance",base:0.8},{id:"minecraft:max_health",base:22},{id:"minecraft:movement_speed",base:0},{id:"minecraft:scale",base:1.2}]}
+execute at @p[scores={charID=1, itemActivation=1..}] anchored eyes if entity @p[distance=..1,sort=nearest,limit=1,team=teamB] run summon pillager ^-2 ^1 ^2 {Team:"teamB",CanPickUpLoot:0b,Health:22f,Tags:["vlad_ranged_summon"],CustomName:{"bold":true,"color":"#330710","text":"Undead"},equipment:{mainhand:{id:"minecraft:crossbow",count:1,components:{"minecraft:unbreakable":{},"minecraft:enchantments":{"punch":1,"quick_charge":3,"piercing":4}}}},drop_chances:{mainhand:0.000},attributes:[{id:"minecraft:explosion_knockback_resistance",base:0.8},{id:"minecraft:follow_range",base:100},{id:"minecraft:knockback_resistance",base:0.8},{id:"minecraft:max_health",base:22},{id:"minecraft:movement_speed",base:0},{id:"minecraft:scale",base:1.2}]}
+
+# SFX
+execute at @p[scores={charID=1, itemActivation=1..}] run playsound minecraft:entity.wither.hurt master @a[distance=..18] ~ ~ ~ 100 1.0 0
+
+# Particle
+execute at @p[scores={charID=1, itemActivation=1..}] at @e[distance=..7,type=pillager] run particle dust_pillar{block_state:"minecraft:nether_wart_block"} ^ ^1 ^ 0.2 0.2 0.2 0.01 25 normal
+
+# Cooldown
+item replace entity @p[scores={charID=1, itemActivation=1..}] hotbar.1 with diamond[custom_name={"bold":true,"color":"#d50064","italic":true,"text":"Ranged Undead Summon"},lore=[{"color":"#740036","italic":true,"text":"Summons two ranged undead monsters ahead of Vlad."}],item_model="rival_force_resources:vlad_skills/vlad_ranged_undead_summon_cooldown"] 1
+scoreboard players set @p[scores={charID=1, itemActivation=1..}] moveSlotCooldown1 260
+
+# ItemActivation Reset
+scoreboard players set @p[scores={charID=1, itemActivation=1..}] itemActivation 0

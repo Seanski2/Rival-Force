@@ -17,17 +17,17 @@ item replace entity @p armor.feet with leather_boots[dyed_color=2565162,attribut
 item replace entity @p hotbar.0 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#d50064","italic":true,"text":"Scarlet Carve"},lore=[{"color":"#740036","italic":true,"text":"A one-two slash combo directly ahead of Vlad."}],custom_data={moveSlot:0},item_model="rival_force_resources:vlad_skills/vlad_scarlet_carve"] 1
 scoreboard players set @p moveSlotComboCounter0 1
 
-# Team Buff
+# Ranged Undead Summon
 
-# item replace entity @p hotbar.1 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Team Buff"},lore=[{"color":"#A1A1A1","italic":true,"text":"Applies effects to the user's team."}],custom_data={moveSlot:1},item_model="rival_force_resources:dummy_skills/dummy_team_buff"] 1
+item replace entity @p hotbar.1 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#d50064","italic":true,"text":"Ranged Undead Summon"},lore=[{"color":"#740036","italic":true,"text":"Summons two ranged undead monsters ahead of Vlad."}],custom_data={moveSlot:1},item_model="rival_force_resources:vlad_skills/vlad_ranged_undead_summon"] 1
 
-# Detonation Trap
+# Hellspawn Summon
 
-# item replace entity @p hotbar.2 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Detonation Trap"},lore=[{"color":"#A1A1A1","italic":true,"text":"Sets up a trap that explodes when approached by an enemy."}],custom_data={moveSlot:2},item_model="rival_force_resources:dummy_skills/dummy_detonation_trap"] 1
+item replace entity @p hotbar.2 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#d50064","italic":true,"text":"Hellspawn Summon"},lore=[{"color":"#740036","italic":true,"text":"Summons three close-range hellspawns ahead of Vlad."}],custom_data={moveSlot:2},item_model="rival_force_resources:vlad_skills/vlad_ranged_undead_summon"] 1
 
-# Construct Barrier
+# Phantasma Pneuma
 
-# item replace entity @p hotbar.3 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Construct Barrier"},lore=[{"color":"#A1A1A1","italic":true,"text":"Constructs a barrier of blocks ahead."}],custom_data={moveSlot:3},item_model="rival_force_resources:dummy_skills/dummy_create_construct"] 1
+item replace entity @p hotbar.3 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#d50064","italic":true,"text":"Phantasma Pneuma"},lore=[{"color":"#740036","italic":true,"text":"Creates a healing field which follows Vlad."}],custom_data={moveSlot:3},item_model="rival_force_resources:vlad_skills/vlad_phantasma_pneuma"] 1
 
 # Melee Combo
 
