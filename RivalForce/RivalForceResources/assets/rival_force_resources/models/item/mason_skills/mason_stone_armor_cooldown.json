@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "rival_force_resources:item/mason_skills/mason_stone_armor_cooldown"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "rival_force_resources:item/mason_skills/mason_ridge_leap_cooldown"
+	}
+}

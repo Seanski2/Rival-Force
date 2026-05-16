@@ -29,12 +29,12 @@ item replace entity @p hotbar.2 with warped_fungus_on_a_stick[custom_name={"bold
 
 item replace entity @p hotbar.3 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#d50064","italic":true,"text":"Phantasma Pneuma"},lore=[{"color":"#740036","italic":true,"text":"Creates a healing field which follows Vlad."}],custom_data={moveSlot:3},item_model="rival_force_resources:vlad_skills/vlad_phantasma_pneuma"] 1
 
-# Melee Combo
+# Levitate
 
-# item replace entity @p hotbar.4 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Melee Combo"},lore=[{"color":"#A1A1A1","italic":true,"text":"Can be activated multiple times to do a series of attacks."}],custom_data={moveSlot:4},item_model="rival_force_resources:dummy_skills/dummy_melee_combo"] 1
-# scoreboard players set @p moveSlotComboCounter4 1
+item replace entity @p hotbar.4 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#d50064","italic":true,"text":"Levitate"},lore=[{"color":"#740036","italic":true,"text":"Toggles if Vlad is currently levitating."}],custom_data={moveSlot:4},item_model="rival_force_resources:vlad_skills/vlad_levitate"] 1
+scoreboard players set @p moveSlotExtra4 0
 
 # Ultimate
 
-# item replace entity @p hotbar.5 with diamond[custom_name={"bold":true,"color":"#FFFFFF","italic":true,"text":"Ultimate"},lore=[{"color":"#A1A1A1","italic":true,"text":"Activates the ultimate."}],custom_data={moveSlot:Ult},item_model="rival_force_resources:dummy_skills/dummy_ultimate_cooldown"] 1
-# scoreboard players set @p moveSlotCooldownUlt 1000
+item replace entity @p hotbar.5 with diamond[custom_name={"bold":true,"color":"#d50064","italic":true,"text":"Arch Dohna Summon"},lore=[{"color":"#740036","italic":true,"text":"Summons the Arch Dohna above Vlad."}],item_model="rival_force_resources:vlad_skills/vlad_arch_dohna_summon_cooldown"] 1
+scoreboard players set @p moveSlotCooldownUlt 900

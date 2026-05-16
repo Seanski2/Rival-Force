@@ -32,4 +32,4 @@ execute as @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={at
 execute as @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1,scores={attack_anim_frame=0..}] run scoreboard players add @s attack_anim_frame 1
 
 # Damage
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] positioned ^ ^ ^-1 as @n[distance=..2.5,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] Affiliation = @s Affiliation run damage @s[tag=!invincible] 5 minecraft:player_attack
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] positioned ^ ^ ^-1 as @n[distance=..2.5,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_1] Affiliation = @s Affiliation unless entity @p[tag=invincible] unless entity @p[tag=stage] run damage @s 5 minecraft:player_attack

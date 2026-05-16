@@ -10,8 +10,5 @@ execute at @p[scores={moveSlotCooldown2=..0,charID=1}] run function rivalforce:c
 # Slot 3
 execute at @p[scores={moveSlotCooldown3=..0,charID=1}] run function rivalforce:characters/vlad/cooldown/move3_cooldown
 
-# Slot 4
-execute at @p[scores={moveSlotCooldown4=..0,charID=1}] run function rivalforce:characters/vlad/cooldown/move4_cooldown
-
 # Ult
 execute at @p[scores={moveSlotCooldownUlt=..0,charID=1}] run function rivalforce:characters/vlad/cooldown/moveult_cooldown

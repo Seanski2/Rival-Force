@@ -1,0 +1,2 @@
+# Slot 2
+item replace entity @p[scores={charID=2, moveSlotExtra3=0}] hotbar.2 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#8F8F8F","italic":true,"text":"Stone Pillar"},lore=[{"color":"#5e5e5e","italic":true,"text":"Creates a stone pillar beneath Mason."}],custom_data={moveSlot:2},item_model="rival_force_resources:mason_skills/mason_stone_pillar"] 1

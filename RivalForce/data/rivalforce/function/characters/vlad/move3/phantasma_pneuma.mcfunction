@@ -1,5 +1,5 @@
 # Spawn & Reposition
-execute at @a[scores={charID=1, itemActivation=1..}] run summon area_effect_cloud ^ ^1 ^ {Radius:0f,Duration:100,Tags:["char_vlad_phantasma_pneuma"]}
+execute at @a[scores={charID=1, itemActivation=1..}] run summon area_effect_cloud ^ ^1 ^ {Radius:0f,Duration:145,Tags:["char_vlad_phantasma_pneuma"]}
 execute at @a[scores={charID=1, itemActivation=1..}] anchored feet rotated as @p run tp @e[type=minecraft:area_effect_cloud,tag=char_vlad_phantasma_pneuma, limit=1, sort=nearest] ^ ^1 ^ ~ ~
 
 # Set Which Team to Heal

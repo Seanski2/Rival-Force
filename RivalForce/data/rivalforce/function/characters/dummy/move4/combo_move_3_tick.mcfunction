@@ -36,7 +36,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3,scores={at
 execute as @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3,scores={attack_anim_frame=0..}] run scoreboard players add @s attack_anim_frame 1
 
 # Damage
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] positioned ^ ^ ^-1 as @n[distance=..2,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] Affiliation = @s Affiliation run damage @s[tag=!invincible] 10 minecraft:player_attack
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] positioned ^ ^ ^-1 as @n[distance=..2,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] Affiliation = @s Affiliation unless entity @p[tag=invincible] unless entity @p[tag=stage] run damage @s 10 minecraft:player_attack
 
 # Block Collision Particles
 execute as @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] at @s unless block ~ ~ ~ air run particle minecraft:flame ^ ^ ^ 0.5 0.5 0.5 0.6 50
@@ -48,4 +48,4 @@ execute as @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] at @s unl
 execute as @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] at @s unless block ~ ~ ~ air run playsound minecraft:block.iron_trapdoor.close master @a[distance=..18] ~ ~ ~ 100 0.5 0
 
 # Block Collision Aoe
-execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] positioned ^ ^ ^-1 as @n[distance=..100,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] Affiliation = @s Affiliation run damage @s[tag=!invincible] 3 minecraft:player_attack
+execute at @e[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] positioned ^ ^ ^-1 as @n[distance=..100,type=!area_effect_cloud] run execute unless score @n[type=minecraft:area_effect_cloud,tag=char_dummy_combo_3] Affiliation = @s Affiliation unless entity @p[tag=invincible] unless entity @p[tag=stage] run damage @s 3 minecraft:player_attack

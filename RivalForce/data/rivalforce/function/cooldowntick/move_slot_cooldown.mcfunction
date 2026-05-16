@@ -11,3 +11,5 @@ scoreboard players remove @a[scores={charID=0, moveSlotExtra4=1..}] moveSlotExtr
 
 # Vlad (CharID 1) Cooldowns
 scoreboard players remove @a[scores={charID=1, moveSlotExtra0=1..}] moveSlotExtra0 1
+
+# Mason (CharID 2) Cooldowns

@@ -11,10 +11,11 @@ execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{
 execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:3}}}}] run function rivalforce:characters/vlad/move3/phantasma_pneuma
 
 # Slot 4
-execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:4}}}}] run function rivalforce:characters/vlad/move4/combo_handler
+execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:4}}}}] run function rivalforce:characters/vlad/move4/levitate
+execute if entity @p[scores={moveSlotExtra4=1..,charID=1},distance=..1,limit=1,sort=nearest] run function rivalforce:characters/vlad/move4/levitate_tick
 
 # Ult
-execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:Ult}}}}] run function rivalforce:characters/vlad/moveult/ult
+execute if entity @p[scores={itemActivation=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{moveSlot:Ult}}}}] run function rivalforce:characters/vlad/moveult/arch_dohna_summon
 
 # Cooldown
 function rivalforce:characters/vlad/cooldown/cooldowns

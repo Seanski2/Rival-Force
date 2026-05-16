@@ -1,0 +1,2 @@
+# Slot 0
+item replace entity @p[scores={charID=2, moveSlotExtra3=0}] hotbar.0 with warped_fungus_on_a_stick[custom_name={"bold":true,"color":"#8F8F8F","italic":true,"text":"Boulder Shot"},lore=[{"color":"#5e5e5e","italic":true,"text":"A slow-moving boulder projectile shot straight ahead."}],custom_data={moveSlot:0},item_model="rival_force_resources:mason_skills/mason_boulder_shot"] 1
