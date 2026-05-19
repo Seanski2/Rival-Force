@@ -1,0 +1,26 @@
+{
+    "description": "Unrestricted Force Forward",
+    "supported_items": "#minecraft:enchantable/equippable",
+    "slots": ["armor"],
+    "weight": 1,
+    "anvil_cost": 0,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_level": 7,
+    "effects": {
+        "minecraft:tick": [{
+            "effect": {
+                "type": "minecraft:apply_impulse",
+                "direction": [1, 0, 0],
+                "coordinate_scale": [1, 1, 1],
+                "magnitude": 5
+            }
+        }]
+    }
+}
