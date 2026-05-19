@@ -1,5 +1,5 @@
 {
-    "description": "Unrestricted Force Forward",
+    "description": "Forward Dash",
     "supported_items": "#minecraft:enchantable/equippable",
     "slots": ["armor"],
     "weight": 1,
@@ -12,14 +12,18 @@
         "base": 0,
         "per_level_above_first": 0
     },
-    "max_level": 7,
+    "max_level": 5,
     "effects": {
-        "minecraft:tick": [{
+        "minecraft:location_changed": [{
             "effect": {
                 "type": "minecraft:apply_impulse",
-                "direction": [1, 0, 0],
+                "direction": [0, 0, 1],
                 "coordinate_scale": [1, 1, 1],
-                "magnitude": 5
+                "magnitude": 1.5
+            },
+            "requirements":{
+                "condition": "enchantment_active_check",
+                "active": false
             }
         }]
     }
