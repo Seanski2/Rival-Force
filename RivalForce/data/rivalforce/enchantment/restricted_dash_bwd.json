@@ -1,5 +1,5 @@
 {
-    "description": "Upward Dash",
+    "description": "Restricted Backawrd Dash",
     "supported_items": "#minecraft:enchantable/equippable",
     "slots": ["armor"],
     "weight": 1,
@@ -17,8 +17,8 @@
         "minecraft:location_changed": [{
             "effect": {
                 "type": "minecraft:apply_impulse",
-                "direction": [0, 1, 0],
-                "coordinate_scale": [1, 1, 1],
+                "direction": [0, 0, -1],
+                "coordinate_scale": [1, 0.05, 1],
                 "magnitude": {
                     "type": "minecraft:linear",
                     "base": 1,
